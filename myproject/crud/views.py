@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView, UpdateView,DeleteView
 from .models import Product
 from django.urls import reverse_lazy
 
+
 # Create your views here.
 class TopView(TemplateView):
     template_name = "top.html"
@@ -28,3 +29,4 @@ class ProductDeleteView(DeleteView):
 class DetailView(DetailView):
     model = Product
     template_name = "crud/product_detail.html"
+
