@@ -95,8 +95,7 @@
         $('form').submit(function(event){
             event.preventDefault();
             var form = $(this);
-            var $input = $('input[name="userInput"]');
-            var userInput = $('input[name="hoge"]').val();
+            var userInput = $input.val();
             console.log(userInput);
 
             // HTMLのフォームを設定する
